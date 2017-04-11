@@ -1,0 +1,15 @@
+import turtle
+
+def draw_line(lenght, angle):
+    hans = turtle.Turtle()
+    hans.right(angle)
+    hans.forward(lenght)
+    hans.backward(lenght*2)
+
+def star(nlines):
+    for angle in range(0, 180, 180 // nlines):
+        draw_line(100, angle)
+    
+#draw a star
+star(18)
+
