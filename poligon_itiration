@@ -1,0 +1,17 @@
+import turtle
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()
+tess.color("pink")
+tess.pencolor("hotpink")
+
+def drawpoly(tess, num_sides, side_size):
+    for i in range(num_sides):
+        tess.forward(side_size)
+        tess.left(360 / num_sides)
+        
+drawpoly(tess, 8, 50)
+        
+
