@@ -1,0 +1,17 @@
+import turtle
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+
+m = turtle.Turtle()
+m.color("hotpink")
+m.pencolor("hotpink")
+
+def drawpoly(tess, num_sides, side_size):
+    for i in range(num_sides):
+        tess.forward(side_size)
+        #360 degress full turn divides the number of sides becouse we turn num_sides times
+        tess.left(360 / num_sides)
+        
+drawpoly(m, 3, 80)
+    
